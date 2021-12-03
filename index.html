@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <title>Mini Projet JS</title>
+</head>
+<body>
+    <!--page num 1--> 
+    <!--navbar-->
+    
+    <nav class ="main-navbar">
+
+        <h1 class="marque">Moe et To</h1>
+        
+        <ul class="links-container">
+            <li class="menu-un"><a href="#nouveauProduit">Ajouter un nouveau produit</a></li>  
+            <li class="menu-un"><a href="#recapProduit">Liste des produits</a></li>
+            
+        </ul>
+    </nav>
+    <!-- photo en cover -->
+    <header>
+    <div class="header-content">
+            <h1>Gestion du stock</h1>     
+    </div>
+    </header>      
+    
+    <!--page num 2 : le formulaire-->
+    <section id="nouveauProduit">
+        <div class ="haut-de-page">
+            <h2 class="title">Moe et To</h2>
+        </div>
+        <div class="ajout">
+            <h2 class="ajout-title">AJOUTER UN NOUVEAU PRODUIT</h2>
+        </div>
+        
+        <!--formulaire-->
+        <div id="formulario">
+            <form id="product-form" >
+                <ul>
+                    <li>
+                        <select id="select" name="type">
+                            <option value="">---------Veuillez choisir une option svp---------</option>
+                            <option id="alcohol" value="alcohol">Alcohol</option>
+                            <option id="soft" value="soft">Soft</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="name">Nom :</label>
+                        <input id="name" type="text" name="nom" placeholder="Nom ici" required>
+                    </li>
+                    <li>
+                        <label>Unités :</label>
+                        <input  type="number" name="quantite" placeholder="Quantité" required>
+                        
+                    </li>
+                    <li>
+                        <label for="priceHT">Prix achat HT :</label>
+                        <input id="priceHT" type="number" name="priceHT" placeholder ="Prix achat HT" maxlength="10"required>
+                    </li>
+                    <li>
+                        <label for="salepriceHT">Prix vente HT :</label>
+                        <input id="salepriceHT" type="number" name="salepriceHT" placeholder="Prix vente HT" maxlength="12"required>
+                    </li>
+                    <li>
+                        <label for="degalc">Taux d' alcool :</label>
+                        <input id="degalc" type="number" name="degalc" placeholder="Tx d'alcool">     
+                    </li>
+                    <li>
+                        <button class="submit-button" type="submit" formaction="recapProduit">Ajouter votre produit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+    </section>
+    <!--page numero 3 : liste des produits-->
+    <section id="recapProduit">
+    
+     <div class ="haut-de-page">
+          <h2 class="title">Moe et To</h2>
+     </div>
+    
+     <div class="ajout">
+         <h2 class="ajout-title">LISTE DES PRODUITS</h2>
+     </div>
+
+
+     <div class="liste-div">   
+         <div id="listeProducts"></div>
+     </div> 
+        
+    </section>
+    <!--page numero 4 : page pour modifier--> 
+    <section id="modif">
+     
+        <div class ="haut-de-page">
+            <h2 class="title">Moe et To</h2>
+         </div>
+         <div class="ajout">
+             <h2 class="ajout-title">MODIFICATION DE PRODUIT</h2>
+         </div>
+        
+        <div id="txtChange"></div>
+        
+    </section>
+
+    <!--page num 5 QR code-->
+    <section id="pageQr">
+        <div class ="haut-de-page">
+            <h2 class="title">Moe et To</h2>
+         </div>
+         <div class="ajout">
+             <h2 class="ajout-title">QR CODE ET DETAIL DU PRODUIT</h2>
+         </div>
+
+         <div class="flex">
+            <div id="qrcode"></div>
+            
+
+            <div>
+            <div id="detail-product"></div>
+            </div>
+            </div>
+
+         
+    </section>
+
+
+    <!--footer-->
+    <footer>
+        <div class ="haut-de-page">
+            <h2 class="title-end">Moe et To</h2>
+        </div>
+    </footer>
+    <script type="text/javascript"
+src="script.js"></script>
+<script type="text/javascript" src="qrcode.min.js"></script>
+</body>
+</html>
+

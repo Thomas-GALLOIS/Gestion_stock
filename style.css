@@ -1,0 +1,324 @@
+
+body {
+    background-color:rgb(245, 245, 245);
+    font-family: sans-serif;
+    margin: 0px;
+    color:#71415f
+}
+section {
+        min-height: 100vh;
+
+}
+
+/*barre de navigation*/
+nav{
+    margin:0px;
+    display: flex;
+}
+.main-navbar {
+        position: fixed;
+        top: 0px;
+        left:0px;
+        right:0px;
+        height: 64px;
+        background-color:#71415f;
+        z-index: 100;
+    
+}
+
+.marque {
+    font-family: "birthstone";
+    height: 60px;
+    margin: 0px 0px 20px 100px;
+    color:white;
+    font-size: 50px;
+}
+
+.main-navbar .links-container {
+    float: right;
+    height: 64px;
+    margin: 0px 30px;
+    padding-left: 514px;
+}
+.main-navbar .links-container li {
+    display: inline-block;
+    height: 50px;
+    padding: 7px 50px;
+    line-height: 50px;
+}
+.main-navbar .links-container li:hover {
+    background-color:white;
+    cursor:pointer;
+}
+.main-navbar .links-container li a {
+
+    color:white ;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+.main-navbar .links-container li a:hover {
+    color :#71415f;
+
+}
+
+/*header*/
+header {
+    min-height: 100vh;
+    background-image: url("12320f466e31bcc1807307e743122c4d_large.jpeg");
+    background-size: cover;
+    opacity: 0.90;
+    
+}
+
+header .header-content{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+
+}
+
+header .header-content h1{
+ 
+    font-size: 60px; 
+    Right: 20px;;  
+    height: 80px;
+    margin: 16px 10px 20px 100px;
+    color:white;   
+}
+
+/*page formulaire ajout de prduit*/
+
+/*div du haut : valable pour les pages suivantes*/
+
+.haut-de-page{
+
+    background-color: #71415f;
+    height: 64px;
+}
+
+.title{
+    font-family: "birthstone";
+    font-size: 50px;
+    color:white;
+    margin:5px 0px 0px 19px;
+    padding: 0px 0px 16px 80px;
+}
+
+
+.ajout{
+    height:64px;
+
+}
+.ajout-title{
+    text-align:center;
+    color : #71415f;
+    font-size: 25px;
+}
+
+/*formulaire*/
+
+#product-form{
+    padding:10px 0px 10px 400px;
+    margin: 10px 100px 10px 100px;
+    border: solid 4px #71415f;
+    
+}
+
+ul {
+    list-style-type: none;
+    }
+
+.submit-button{
+    background-color: #71415f;
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+    margin :0px 0px 0px 60px;
+    Padding: 0px 20px 0px 20px;
+    
+    font-size:20px;
+    font-weight: bold;
+    
+    
+    cursor: pointer;
+}
+.submit-button a{
+    text-decoration: none;
+    color: white;
+}
+
+#product-form label{
+    color: #71415f;;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#product-form input{
+    
+    border: 2px solid #71415f;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+#product-form select{
+    border: 2px solid #71415f;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/*page liste produits*/
+
+.liste-div{
+    display:flex;
+    margin:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+#listeProducts{
+display: flex;
+flex-wrap: wrap;
+margin:10px 10px 10px 10px;
+padding: 10px 10px 10px 10px;
+
+}
+
+.new-liste{
+
+    margin:10px 20px 10px 20px;
+    padding: 0px 10px 0px 10px;
+    border: solid 2px #71415f;
+
+}
+
+.boutons{
+
+    display:flex
+}
+
+.quantite-rouge{
+    padding: 1px 1px 1px 1px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    
+} /* classe ajouté aux quantite < 10 */
+
+.deleteButton{
+    background-color: #71415f;
+    color: white;
+    border-radius: 8px;
+    height: 25px;
+    
+    font-size:15px;
+    margin:0px 5px 0px 5px;
+    padding: 0px 10px 0px 10px;  
+    cursor: pointer;
+}
+
+.changeButton{
+    background-color: #71415f;
+    color: white;
+    border-radius: 8px;
+    height: 25px;
+    
+    font-size:15px;
+    margin:0px 5px 0px 5px;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+
+}
+.changeButton a{
+    text-decoration: none;
+    color: white;
+}
+
+.btnCode{
+    background-color: #71415f;
+    color: white;
+    border-radius: 8px;
+    height: 25px;
+    
+    font-size:15px;
+    margin:0px 5px 0px 5px;
+    padding: 0px 23px 0px 23px;
+    cursor: pointer;
+
+}
+.btnCode a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*page edit*/
+
+#product-form-edit{
+
+    padding:10px 0px 10px 400px;
+    margin: 10px 100px 10px 100px;
+    border: solid 4px #71415f;
+
+}
+    
+#product-form-edit label{
+    color: #71415f;;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#product-form-edit input{
+    
+    border: 2px solid #71415f;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+#product-form-edit select{
+    border: 2px solid #71415f;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/*page QR code*/
+
+.flex{
+    display: flex;
+
+}
+#qrcode{
+    margin: 0px 10px 10px 10px;
+    padding: 0px 10px 10px 455px;
+
+}
+
+/*footer*/
+
+.title-end{
+        font-family: "birthstone";
+        text-align: right;
+        font-size: 50px;
+        color:white;
+        margin:5px 80px 0px 0px;
+        padding: 0px 0px 16px 0px;
+    
+}
+
+
+
+
+
+
+
+
+
